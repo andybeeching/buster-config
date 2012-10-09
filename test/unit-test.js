@@ -2,7 +2,6 @@
 if ( typeof require != "undefined" ) {
   var buster = require("buster");
   var SUT = require("../lib/sut");
-  console.log(SUT);
 }
 
 buster.testCase("SUT Basic", {
