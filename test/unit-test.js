@@ -1,6 +1,9 @@
 // Node tests
-var buster = require("buster");
-var SUT = require("../lib/sut");
+if ( typeof require != "undefined" ) {
+  var buster = require("buster");
+  var SUT = require("../lib/sut");
+  console.log(SUT);
+}
 
 buster.testCase("SUT Basic", {
   "SUT.sum() is testable": function () {

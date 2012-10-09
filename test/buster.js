@@ -6,3 +6,10 @@ config["Test Node"] = {
     sources: ["lib/sut.js"],
     tests: ["test/*-test.js"]
 }
+
+// config["Test Browser"] = {
+//   rootPath: "../",
+//     environment: "browser",
+//     sources: ["lib/sut.js"],
+//     tests: ["test/*-test.js"]
+// };
