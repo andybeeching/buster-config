@@ -1,1 +1,11 @@
 Resolve "can't find module buster" - npm install buster
+
+Stuff to try with buster in skeleton repo
+
+- Unit styles tests
+- BDD styles tests
+- Async Objects
+- Mocking/Stubs
+- AMD Architectures
+- Buster lint
+- Buster coverage
