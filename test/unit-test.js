@@ -1,19 +1,15 @@
 /*global buster, assert*/
-(function () {
+(function (global) {
 
   "use strict";
 
-  if ( typeof require !== "undefined" ) {
-    var buster = require( "buster" );
-    var SUT = require( "../lib/sut" );
-  }
+  var buster = global.buster || require( "buster" );
+  var SUT = global.SUT || require( "../lib/sut" );
 
   buster.testCase( "SUT Basic", {
     "SUT.sum() is testable": function () {
-      console.log(SUT);
-      var SUT = {};
       assert( SUT.sum(1, 2), 3 );
     }
   });
 
-}());
+}(this));
