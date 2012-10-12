@@ -3,22 +3,22 @@ var config = module.exports;
 config["Test Browser"] = {
 
   // Advanced config
-  // extensions: [ require("buster-lint") ],
-  // "buster-lint": {
-  //     linter: "jshint",
-  //     linterOptions: {
-  //       indent: true,
-  //       maxlen: 100,
-  //       white: false,
-  //       onevar: false,
-  //       browser: true,
-  //       eqnull: true,
-  //       immed: true,
-  //       undef: true,
-  //       strict: true,
-  //       trailing: true
-  //     }
-  // },
+  extensions: [ require("buster-lint") ],
+  "buster-lint": {
+      linter: "jshint",
+      linterOptions: {
+        indent: true,
+        maxlen: 100,
+        white: false,
+        onevar: false,
+        browser: true,
+        eqnull: true,
+        immed: true,
+        undef: true,
+        strict: true,
+        trailing: true
+      }
+  },
 
   // Basic config
   rootPath: "../",

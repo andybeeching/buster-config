@@ -1,4 +1,5 @@
 /*global buster, assert*/
+
 (function (global) {
 
   "use strict";
