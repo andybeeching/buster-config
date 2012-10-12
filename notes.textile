@@ -1,4 +1,14 @@
 Resolve "can't find module buster" - npm install buster
+For strict mode need to wrap stuff in closures
+  - Need to help buster find globals inside this
+  - Good pattern from Morgan for node/browser tests
+  - var FOO = global.foo || require(path/to/foo);
+    - where global is a named parameter and the correct scope is passed in to it: (function(global){{}(this));
+Linting can be temperamental to setup
+ - If getting errors more likely in the test code than your code
+ - Should lint your test files too - part of production codebase
+ - linting is part of tests, not a separate activity.
+
 
 Stuff to try with buster in skeleton repo
 
@@ -7,5 +17,6 @@ Stuff to try with buster in skeleton repo
 - Async Objects
 - Mocking/Stubs
 - AMD Architectures
-- Buster lint
+- Y: Buster lint
 - Buster coverage
+- Git pre-commit hook to run tests across whole codebase?
