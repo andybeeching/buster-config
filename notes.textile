@@ -9,14 +9,28 @@ Linting can be temperamental to setup
  - Should lint your test files too - part of production codebase
  - linting is part of tests, not a separate activity.
 
+# Buster tests have the following format:
+# "STRING": function () { asserts... }
+# Use string operand to run one tests
+#   e.g. buster test "foo"
+#   note: treated as a RegExp for fuzzy matching
+#   Only works for individual tests, not test cases
+# Use -g flag to specify group
+#   e.g. buster test -g "Node"
+# Use -t flag to specify test files to run
+#   e.g. buster test --tests test/mytest.js
+#   Typically have ONE TestCase per file
 
 Stuff to try with buster in skeleton repo
 
-- Unit styles tests
-- BDD styles tests
+- Y: TDD styles tests
+- Y: BDD styles tests
+- Assertion Count
 - Async Objects
 - Mocking/Stubs
 - AMD Architectures
 - Y: Buster lint
 - Buster coverage
 - Git pre-commit hook to run tests across whole codebase?
+
+TODO: Auto semantic version? How/when?
